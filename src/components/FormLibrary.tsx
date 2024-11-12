@@ -8,6 +8,10 @@ interface Form {
   fileUrl: string
 }
 
+/**
+ * Renders a Form Library component that displays a list of downloadable forms.
+ * @returns {React.ReactElement} A React component that renders a list of forms with download links.
+ */
 const FormLibrary: React.FC = () => {
   const [forms, setForms] = useState<Form[]>([])
 
