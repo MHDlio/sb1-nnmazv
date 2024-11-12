@@ -56,6 +56,11 @@ const ocrTutorialSteps: TutorialStep[] = [
   // Add more steps as needed
 ]
 
+/**
+ * Interactive tutorial component for form and OCR functionalities.
+ * Manages the state and display of a step-by-step tutorial overlay.
+ * @returns {JSX.Element} A React component that renders tutorial buttons and a modal for the interactive tutorial.
+ */
 const InteractiveTutorial: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [currentStep, setCurrentStep] = useState(0)
