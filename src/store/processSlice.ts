@@ -21,6 +21,11 @@ const initialState: ProcessState = {
   error: null,
 }
 
+/**
+ * Fetches steps for a process asynchronously.
+ * @returns {Promise<Step[]>} A promise that resolves to an array of Step objects.
+ * Each Step object contains id, title, and description properties.
+ */
 export const fetchSteps = createAsyncThunk('process/fetchSteps', async () => {
   // In a real app, this would be an API call
   const response = await new Promise<Step[]>((resolve) => {
