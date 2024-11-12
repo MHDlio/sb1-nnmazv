@@ -6,6 +6,14 @@ interface Message {
   sender: 'user' | 'bot'
 }
 
+/**
+ * React functional component for a chatbot assistance interface.
+ * This component renders a chat interface with a toggle button,
+ * message display area, and input field for user interactions.
+ *
+ * @returns {JSX.Element} A React component that displays a chatbot interface
+ *                        with message history and input functionality.
+ */
 const ChatbotAssistance: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([])
