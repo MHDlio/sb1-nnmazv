@@ -11,6 +11,14 @@ interface Step {
   component: React.ReactNode
 }
 
+/**
+ * React functional component for a multi-step form process navigator.
+ * Manages the state of the current step, selected form, and renders
+ * the appropriate components for each step in the process.
+ * 
+ * @returns {JSX.Element} A div containing the entire process navigator UI,
+ * including step indicators, current step component, and navigation buttons.
+ */
 const ProcessNavigator: React.FC = () => {
   const [steps, setSteps] = useState<Step[]>([])
   const [currentStep, setCurrentStep] = useState(1)
