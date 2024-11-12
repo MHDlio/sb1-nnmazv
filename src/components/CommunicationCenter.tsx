@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { Send, Inbox, Phone } from 'lucide-react'
 
+/**
+ * Renders the Communication Center component with email and SMS tabs
+ * @returns {JSX.Element} A div containing the Communication Center UI
+ */
 const CommunicationCenter: React.FC = () => {
   const [activeTab, setActiveTab] = useState('email')
 
