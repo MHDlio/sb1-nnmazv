@@ -46,6 +46,14 @@ const Dashboard: React.FC = () => {
   )
 }
 
+/**
+ * Renders a dashboard card component with a title, value, and icon.
+ * @param {Object} props - The component props.
+ * @param {string} props.title - The title of the dashboard card.
+ * @param {string} props.value - The value to be displayed in the dashboard card.
+ * @param {React.ReactNode} props.icon - The icon to be displayed in the dashboard card.
+ * @returns {JSX.Element} A React component representing a dashboard card.
+ */
 const DashboardCard: React.FC<{ title: string; value: string; icon: React.ReactNode }> = ({ title, value, icon }) => (
   <div className="bg-white shadow rounded-lg p-6">
     <div className="flex items-center justify-between">
