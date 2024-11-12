@@ -11,6 +11,10 @@ import InteractiveTutorial from './components/InteractiveTutorial'
 import ChatbotAssistance from './components/ChatbotAssistance'
 import FormLibrary from './components/FormLibrary'
 
+/**
+ * Main application component that sets up routing and layout
+ * @returns {JSX.Element} The rendered application structure
+ */
 function App() {
   const [activeTab, setActiveTab] = useState<'download' | 'upload'>('download')
 
