@@ -1,6 +1,14 @@
 import React, { useState } from 'react'
 import { Save, FileText, Plus } from 'lucide-react'
 
+/**
+ * React functional component that renders a template editor interface.
+ * This component allows users to select, edit, and save document templates.
+ * It displays a list of available templates and provides an editing area
+ * for the selected template.
+ * 
+ * @returns {JSX.Element} A React element representing the template editor interface
+ */
 const TemplateEditor: React.FC = () => {
   const [templates, setTemplates] = useState([
     { id: 1, name: 'Visa Application Cover Letter' },
