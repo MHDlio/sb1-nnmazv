@@ -7,6 +7,12 @@ interface SuggestedForm {
   name: string
 }
 
+/**
+ * Renders an automated form filling component.
+ * This component allows users to upload a file, process it using OCR,
+ * and then fill out a selected form based on the extracted data.
+ * @returns {JSX.Element} A React component for automated form filling
+ */
 const AutomatedFormFilling: React.FC = () => {
   const [file, setFile] = useState<File | null>(null)
   const [isProcessing, setIsProcessing] = useState(false)
