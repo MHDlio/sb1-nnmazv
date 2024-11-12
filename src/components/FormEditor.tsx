@@ -13,6 +13,13 @@ interface FormSchema {
   fields: FormField[]
 }
 
+/**
+ * A React functional component for rendering and managing a dynamic form editor.
+ * @param {Object} props - The component props.
+ * @param {string} props.formId - The unique identifier of the form to be edited.
+ * @param {Record<string, string>} [props.initialData] - Optional initial data to pre-fill the form fields.
+ * @returns {React.ReactElement} A React element representing the form editor UI.
+ */
 const FormEditor: React.FC<{ formId: string; initialData?: Record<string, string> }> = ({ formId, initialData }) => {
   const [formSchema, setFormSchema] = useState<FormSchema | null>(null)
 
